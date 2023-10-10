@@ -22,7 +22,6 @@ main {
 }
 
 .container {
-    border: 2px solid red;
     height: 100vh;
     width: 40vw;
     display: flex;
@@ -32,27 +31,29 @@ main {
 
 } 
 #gptimg {
-    margin-top: -380px;
+    margin-top: -80px;
 
 }
 
 h1 {
     margin-top: 200px ;
+    margin-bottom: 30px;
 
 }
 
 .textfield {
+    
     width: 320px;
-    height: 84px;
+    height: 74px;
     margin-bottom: 20px;
-    border: 1px solid #0FA47F;
-    border-radius: 10px;
 }
 
 input {
     width: 310px;
     height: 54px;
-    border: none; 
+    
+    border-radius: 10px;
+    border: 1px solid #0FA47F;
 }
 
 #contibtn {
@@ -73,6 +74,7 @@ input {
 }
 
 h6 {
+    margin-bottom: 20px;
     margin-top: 10px;
     font-size: 15px;
 }
@@ -82,3 +84,42 @@ a {
     color: #0FA47F;
 }
 
+.bottons {
+    flex-direction: column;
+    display: flex;
+    margin: 20px;
+}
+
+#btngoogle {
+background-color: white;
+border: 0.5px solid black;
+border-radius: 6px;
+width: 400px;
+height: 60px;
+font-size: 20px;
+margin-bottom: 20px;
+align-content: center;
+justify-items: center;
+}
+
+#btnmicrosoft {
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 6px;
+    width: 400px;
+    height: 60px;
+    font-size: 20px;   
+}
+
+#google {
+
+    margin-left: -80px;
+    margin-right: 10px;
+    width: 30px;
+}
+
+#microsoft {
+    margin-left: 5px;
+    margin-right: 20px;
+    width: 25px;
+}
