@@ -40,19 +40,6 @@ main {
     border-radius: 6px;
 }
 
-#btnchat {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #343540;
-    width: 244px;
-    height: 50px;
-    border: none;
-    border-radius: 6px;
-    margin-top: 10px
-}
-
 h1 {
     font-size: 11px;
     font-weight: 100;
@@ -133,49 +120,73 @@ h1 {
     flex-direction: column;
 }
 
-#converuser {
-    width: 100%;
-    background-color: transparent;
-    height: 70px;
+#card {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-direction: column;  
+}
+
+#container { 
+    margin-top: 69px;
+    height: 50vh ; 
+    width:80vw ; 
+    display: flex;
+    justify-content: center;
+}
+
+#ansselect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 18px;
+
+}
+
+.mainicon {
+    margin-bottom: 16px;
+    width: 20px;
+
+}
+
+.btnans {
+    padding: 10px;
+    width: 230px;
+    height: 63px;
+    background-color: #444654;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 8px;
+    font-size: 13px;
+    transition-duration: 0.1s;
+
+}
+
+.btnans:hover {background-color: #2d2f38;}
+
+h2 {
+    margin-top: 30px;
+    color: white;
+    font-size: 34px;
+    font-weight: 200;
 }
 
 h3 {
-    margin-left: 40px;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 50;
-}
-
-#converbot {
-    background-color: #444654;
-    width: 100%;
-    height: 162px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#chaticon {
-    margin-left: 150px;
-}
-
-#boticon {
-    margin-left: 150px;
-    margin-top: -55px;
-}
-
-h4 {
-    font-size: 15px;
-    font-weight: 50;
-    color: white;
-    margin-left: 40px;
 }
 
 #space2 {
-    height: 280px;
+    height: 69px;
 }
 
 #bottonstage {
@@ -213,30 +224,20 @@ input {
     margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
 }
-
-#sender {position: absolute; 
-margin-left: 720px;
-margin-top: 35px;
-background-color: #343540;
-display: flex;
-align-items: center;
-justify-items: center;
-width: 30px;
-height: 30px;
-transition-duration: 0.1s;
-cursor: pointer;
-}
-
-#sender {background-color: #444654;}
 
 #send {
+    position: absolute;
     rotate: 90deg;
-    fill:black;
-    margin-left: 6px;
+    margin-top: -10px;
+    margin-left: 720px;
+    
 }
-
-#send:hover {fill: green;}
 
 footer {
     width: 888px;
